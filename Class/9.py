@@ -1,9 +1,10 @@
-def pizza(size, *type):
-    print(f"Вы заказали такие пиццы с размером {size}: {type}")
-    for i in type:
-        print(f'-{i}')
+#while True:
+#    name = input('Введите имя')
+#    if name == 'Хватит':
+#        break
+#print('Привет',name)
 
-size=input("Размер: ")
-pizza(size,"4cheese")
-pizza(size,"diablo","gavaiskaya","4meat","peperoni","ukrainskaya")
-pizza(size,"4cgeese","4meat")
+a = "Мне нужно немного информации о тебе"
+a += "\nСкажи пожалуйста, как тебя зовут?\n"
+name = input(a)
+print(f"\nHello, {name}!")
