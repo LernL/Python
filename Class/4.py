@@ -1,27 +1,65 @@
-#a=str(input("Какое слово"))
-#for i in a:
-#    print(i)
+#auto=['audi', 'bmw', 'ferrari', 'ford', 'porshe']
+#print(auto)
+#print(auto[2])
+#print(auto[3].title())
+#print(auto[-2])
 
+#auto=['audi', 'bmw', 'ferrari', 'ford', 'porshe']
+#print(auto)
+#message = f'Желаете ли вы купить {auto[0].title()}?'
+#print(message)
+#auto[2]='lambo'
+#print(auto)
+#auto.append('bugatti')
+#print(auto)
+#print(auto[5])
 
-#t="Рефреджератор"
-#a=0
-#for i in t:
-    #print(i,end="")
-    #a+=1
-#print(" ",a)
+#auto=[]
+#auto.append('ferrari')
+#auto.append('ford')
+#auto.append('VAZ')
+#auto.append('mitsubisi')
+#auto.append('rols-Roys')
+#auto.append('BMW')
+#auto.append('nissan')
+#auto.append('deLorean')
+#auto.append('Audi')
+#auto.append('Mers')
+#print(auto)
 
-#m=["Google","Yandex","Youtube","Facebook","Twiter"]
-#for i in m:
-#    print(i)
+#auto=['audi', 'bmw', 'ferrari', 'ford', 'porshe']
+#print(auto)
+#auto.insert(2, 'lambo')
+#print(auto)
+#del auto[0]
+#print(auto)
+#del_auto = auto.pop(2)
+#print(auto)
+#print(del_auto)
 
-#n=int(input("n="))
-#for x in range(1,n):
-#   y=x*x
-#    print(y)
+#auto=['audi', 'bmw', 'ferrari', 'ford', 'porshe']
+#print(auto)
+#auto.remove('ford')
+#print(auto)
+#item='ford'
+#auto.remove(item)
+#print(auto)
+#message = f'Осталось: {auto}'
+#print(message)
+#auto.reverse()
+#print(auto)
+#print(len(auto))
 
-n=int(input("n="))
-i=0
-s=0
-for i in range(1,n):
-    s+=i
-print(s)
+a=int(input('Who won?: '))
+if a==1:
+    print('Ukraine')
+elif a==2:
+    print('Germany')
+elif a==3:
+    print('USA')
+elif a==4:
+    print('Poland')
+elif a==5:
+    print('Finland')
+else :
+   print('Error')
