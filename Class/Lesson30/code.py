@@ -49,3 +49,44 @@ store_discount=Discount("Store_d","food",["apples","carrots","potatoes"])
 store_discount.get_discounts_products()
 all_store=Shop("A_shop","animal")
 all_store.describe_shop()
+#                                       814
+print("")
+print(814)
+class Bank:
+    def __init__(self,__balance):
+        self.__balance=__balance
+        print("I open a bank account")
+    def deposit(self):
+        a=(input(f"I deposit to your account(if you don't want write 'break'): \n"))
+        if a=="break":
+            return a
+        else:
+            b=float(a)
+            self.__balance+=b
+            print(f"On the account: {self.__balance}")
+            return self.__balance
+    def withdraw(self):
+        while True:
+            a=(input(f"I withdraw to your account(if you don't want write 'break'): \n"))
+            if a=="break":
+                return a
+            b=float(a)
+            if b>self.__balance:
+                print("Error: not enought money")
+            else:
+                self.__balance-=b
+                print(f"On the account: {self.__balance}")
+                return self.__balance
+b1=Bank(0)
+b1.deposit()
+while True:
+    a=str(input("What action do you want to take(if you want stop write 'break'(You can write 'withdraw' or 'deposit')? "))
+    if a=="break":
+        break
+    elif a=="deposit":
+        b1.deposit()
+        
+    elif a=="withdraw":
+        b1.withdraw()
+    else:
+        print("Unknown command")
